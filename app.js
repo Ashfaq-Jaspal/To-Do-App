@@ -14,10 +14,12 @@ function showForm() {
     let formDiv = document.body.children[1];
     formDiv.setAttribute(`onsubmit`, `createClass()`);
     formDiv.classList.add(`form`);
+    event.target.style.display = `none`
 }
 
 function cancelForm() {
     document.querySelector(`.form`).remove();
+    document.getElementById(`create-btn`).style.display = `block`
 }
 
 function createClass() {
@@ -32,6 +34,7 @@ function createClass() {
     };
     userData.push(todo);
     localStorage.setItem(`ClassRooms`, JSON.stringify(userData));
+    document.getElementById(`create-btn`).style.display = `block`
 }
 
 function displayData() {
