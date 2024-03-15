@@ -10,8 +10,8 @@ function showForm() {
     </div>
 `;
     form.innerHTML = formHtml;
-    document.getElementById(`container`).after(form);
-    let formDiv = document.body.children[2];
+    document.getElementById(`container`).before(form);
+    let formDiv = document.body.children[1];
     formDiv.setAttribute(`onsubmit`, `createClass()`);
     formDiv.classList.add(`form`);
 }

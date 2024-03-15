@@ -5,7 +5,6 @@ body, html{
 .create-btn {
     margin-top: 50px;
     width: 300px;
-    /* margin-left: 30px; */
 }
 button {
     padding: 9px 18px;
@@ -21,11 +20,11 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 20px 30px;
     gap: 20px;
 }
 body {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,16 +33,14 @@ body {
 .form {
     width: 380px;
     height: 300px;
-    position: absolute;
-    top: 26%;
-    left: 30%;
+    margin-top: 50px;
     border-radius: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    box-shadow: -5px -5px 20px rgb(175, 175, 175), 5px 5px 20px rgb(176, 176, 176);
+    box-shadow: -1px -1px 10px rgb(200, 200, 200), 1px 1px 10px rgb(200, 200, 200);
 }
 .form input {
     padding: 20px;
