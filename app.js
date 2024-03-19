@@ -50,7 +50,7 @@ function displayData() {
     <h3 style="display: none;" id = "classNumber">${i}</h3>
     </div>
     <div>
-    <button  id="del" onclick="del()">Delete</button>
+    <button  id="del" onclick="deleteCalass()">Delete</button>
     </div>
 </div>
         `;
@@ -58,7 +58,7 @@ function displayData() {
 }
 displayData();
 
-function del() {
+function deleteCalass() {
     let userData = JSON.parse(localStorage.getItem(`ClassRooms`)) ?? [];
     let classNumber = event.target.parentNode.parentNode.children[0].children[3].innerText;
     userData.splice(classNumber, 1);
